@@ -1,11 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { createGlobalStyle } from "styled-components"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const RootStyle = createGlobalStyle`
+  * {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+`
+
 ReactDOM.render(
   <React.StrictMode>
+      <RootStyle />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
