@@ -27,7 +27,7 @@ export const SearchBox = () => {
     return (
         <Container onSubmit={handleSubmit}>
             <div>
-                <Input ref={searchBoxRef}/>
+                <Input ref={searchBoxRef} placeholder={"Github username"}/>
                 <Button type="submit">
                     <BsSearch />
                 </Button>
